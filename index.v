@@ -6,10 +6,10 @@ import json
 
 //@['/']
 pub fn (app &App) index(mut ctx Context) veb.Result {
-	title := 'Hjem'
+	title := 'Værmeldinga.no'
 
 	search_query := ctx.form['search_query']
-	//println(search_query)
+	// println(search_query)
 
 	api_response := http.get('https://api.weatherbit.io/v2.0/current?key=35825ae95bfc408e81c8c514d9a01d7f&units=M&lang=nb&postal_code=2750&country=no${search_query}') or {
 		panic(err)
