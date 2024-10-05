@@ -1,0 +1,14 @@
+@include 'static/header.html'
+        <article class="panel is-link">
+            <p class="panel-heading">${title}</p>
+            <div class="panel-block">
+                <div class="block">
+                    @for q,a in qa
+                        <div class="notification">@q</div>
+                        <div class="block">@a</div>
+                    @end
+                </div>
+            </div>
+        </article>
+@include 'static/back_button.html'
+@include 'static/footer.html'

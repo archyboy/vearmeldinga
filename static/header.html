@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="no"data-theme="@app.theme_mode">
+<head>
+    <meta charset="UTF-8">
+    <title>${title}</title>
+    <link rel="stylesheet" href="css/bulma.css">
+</head>
+<body class="container">
+
+<div class="panel-block">
+    <div class="field is-grouped">
+    <a href="/"><button class="button" >Hjem</button></a>
+    <a href="/application"><button class="button" >App</button></a>
+    <a href="/login"><button class="button" >Logg inn</button></a>
+    <a href="/faq"><button class="button" >FAQ</button></a>
+    <a href="/contact"><button class="button" >Kontakt oss</button></a>
+    @if app.theme_mode == 'dark'
+        <a href="/?theme_mode=light"><button class="button is-light">Lys modus</button></a>
+    @else
+        <a href="/?theme_mode=dark"><button class="button is-dark">Mørk modus</button></a>
+    @end
+    </div>
+</div>
