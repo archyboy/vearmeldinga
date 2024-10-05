@@ -16,7 +16,7 @@ pub mut:
 
 fn main() {
 	mut app := &App{}
-	mut ctx := Context{}
+	// mut ctx := Context{}
 	app.site_name = 'Værmeldinga.no'
 
 	mut data := Data{
