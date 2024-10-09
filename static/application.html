@@ -1,24 +1,26 @@
 @include 'static/header.html'
-        <article class="panel is-link">
-            <p class="panel-heading">${title}</p>
-                <div class="panel-block">
-                    <div class="notification">
-                    ${app}
-                     </div>
-                </div>
-            <div class="panel-block">
-                <div class="notification">
-                    ${ctx}
-                </div>
-            </div>
-            <div class="panel-block">
-                <div class="block">
-                    ${ctx.form}
-                </div>
-            </div>
-            </div>
+<article class="panel is-link">
+    <p class="panel-heading">${title}</p>
+        <div class="panel-block">
+            <div class="notification">
+            ${app}
+             </div>
+        </div>
+    <div class="panel-block">
+        <div class="notification">
+            ${ctx}
+        </div>
+    </div>
+    <div class="panel-block">
+        <div class="block">
+            ${ctx.form}
+        </div>
+    </div>
+    <div>
+        @realname
+    </div>
 
-        </article>
+</article>
 @include 'static/back_button.html'
 @include 'static/footer.html'
 

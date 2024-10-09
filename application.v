@@ -6,11 +6,13 @@ pub struct Data {
 	name string
 }
 
-
 @['/application'; get; post]
 pub fn (mut app App) application(mut ctx Context) veb.Result {
 	title := 'App'
 
+	realname := '${ctx.query['firstname']} ${ctx.query['lastname']}'
+
+	println(realname)
 	/*
 	mut usermap := {
 		'username': 'archy'
@@ -27,7 +29,3 @@ pub fn (mut app App) application(mut ctx Context) veb.Result {
 	*/
 	return $veb.html('static/application.html')
 }
-
-
-
-
