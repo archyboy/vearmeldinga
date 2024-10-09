@@ -15,6 +15,8 @@ pub fn (mut app App) application(mut ctx Context) veb.Result {
 
 	println(realname)
 	println(data)
+
+	println(ctx)
 	/*
 	mut usermap := {
 		'username': 'archy'

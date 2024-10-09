@@ -4,13 +4,13 @@ import net.http
 
 fn main() {
 	for i in 1 .. 2 {
-		req := http.new_request(http.method_from_str('POST'), 'http://xn--vrmeldinga-d6a.no:8080/application/?firstname=Anders&lastname=Habberstad',
-			'firstname=Anders&lastname=Habberstad')
+		req := http.new_request(http.method_from_str('GET'), 'http://xn--vrmeldinga-d6a.no:8080/application',
+			'data=Some REQ Data!!')
 
 		fetch_config := http.FetchConfig{
 			url:                  'http://xn--vrmeldinga-d6a.no:8080/application/?firstname=Anders&lastname=Habberstad'
-			method:               .post
-			data:                 ''
+			method:               .get
+			data:                 'data=Some RESP Data!!'
 			stop_receiving_limit: 0
 		}
 
