@@ -3,14 +3,14 @@ module main
 import net.http
 
 fn main() {
-	for i in 1 .. 100 {
-		req := http.new_request(http.method_from_str('RUN'), 'http://xn--vrmeldinga-d6a.no:8080/application',
+	for i in 1 .. 2 {
+		req := http.new_request(http.method_from_str('POST'), 'http://xn--vrmeldinga-d6a.no:8080/application/?firstname=Anders&lastname=Habberstad',
 			'firstname=Anders&lastname=Habberstad')
 
 		fetch_config := http.FetchConfig{
-			url:                  'http://xn--vrmeldinga-d6a.no:8080/application'
-			method:               .get
-			data:                 'firstname=Anders&lastname=Habberstad'
+			url:                  'http://xn--vrmeldinga-d6a.no:8080/application/?firstname=Anders&lastname=Habberstad'
+			method:               .post
+			data:                 ''
 			stop_receiving_limit: 0
 		}
 
@@ -20,7 +20,7 @@ fn main() {
 		}
 
 		println(req)
-		// println(res)
+		println(res)
 
 		println('#----------------------${i}--------------------------#')
 	}
