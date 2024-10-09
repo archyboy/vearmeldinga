@@ -8,9 +8,9 @@ fn main() {
 			'firstname=Anders&lastname=Habberstad')
 
 		fetch_config := http.FetchConfig{
-			url:                  'http://xn--vrmeldinga-d6a.no:8080/login'
+			url:                  'http://xn--vrmeldinga-d6a.no:8080/application'
 			method:               .get
-			data:                 'Hello response, how are you?'
+			data:                 'firstname=Anders&lastname=Habberstad'
 			stop_receiving_limit: 0
 		}
 
