@@ -13,10 +13,11 @@ pub fn (mut app App) application(mut ctx Context) veb.Result {
 	realname := '${ctx.query['firstname']} ${ctx.query['lastname']}'
 	data := ctx.query['data']
 
+	println('#---------------------------Application-------------------------------------------------------#')
 	println(realname)
 	println(data)
-
 	println(ctx)
+	println('#----------------------------------------------------------------------------------#')
 	/*
 	mut usermap := {
 		'username': 'archy'
