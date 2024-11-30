@@ -7,9 +7,9 @@ pub fn (app &App) login(mut ctx Context) veb.Result {
 	title := 'Logg inn'
 
 	mut usermap := {
-		'username': 'archy'
-		'password': 'mypassword'
-		'email': 'archy@workmail.com'
+		'username': 'username'
+		'password': 'password'
+		'email': 'some@email.com'
 	}
 	return ctx.html($tmpl('static/login.html'))
 }
