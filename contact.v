@@ -14,9 +14,9 @@ pub fn (app &App) contact(mut ctx Context) veb.Result {
 	title := 'Kontakt'
 
 	formdata := FormData{
-		fullname: 'Anders Habberstad'
-		username: 'archy'
-		email: 'habberstad@mail.com'
+		fullname: 'Full Name'
+		username: 'username'
+		email: 'some@email.com'
 		message: 'This is the message'
 	}
 	return ctx.html($tmpl('static/contact.html'))
