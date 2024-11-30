@@ -23,7 +23,7 @@ fn main() {
 		name: 'Cool guy'
 	}
 	app.data = data
-	app.secret_key = 'ygr87gc38g87wgqhduiwd'
+	app.secret_key = 'xxxxxxxxxxxxxxxxxxxxxxx'
 	app.static_mime_types['.yml'] = 'txt/plain'
 	app.static_mime_types['.scss'] = 'txt/plain'
 
